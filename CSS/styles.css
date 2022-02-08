@@ -1,25 +1,77 @@
 :root {
-  --background-color: beige;
+  --background-color: #f5f2e7;
 }
 body {
-  background-color: var(--background-color);
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+}
+
+.firstPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid gray;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body h1 {
-  margin-top: 0;
+.firstPage .title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
 }
-
-.cloudImg1 {
+.firstPage .cloudImg1 {
   position: relative;
   left: 150px;
   height: 100px;
 }
 
-.cloudImg2 {
+.firstPage .cloudImg2 {
   position: relative;
   right: 200px;
   height: 100px;
+}
+
+.secondPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  -webkit-animation: fadein 3s;
+}
+
+.secondPage .myPhoto {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.secondPage .introduce {
+  font-size: 1.5em;
+}
+
+.secondPage .computerImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.thirdPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thirdPage a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
